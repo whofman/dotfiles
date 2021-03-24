@@ -1,0 +1,156 @@
+# Personal aliases ~/.aliasrc
+
+# System Maintenance {{{
+alias sdn="sudo shutdown now"
+alias sr="sudo reboot"
+alias ss="sudo systemctl"
+alias psref="gpg-connect-agent RELOADAGENT /bye" # Refresh gpg
+alias sp='sudo pacman --noconfirm -S'
+#alias yay='yay --noconfirm -S'
+alias update='sudo pacman -Syuu'
+alias pksyua='yay -Syu --noconfirm'
+alias psgr='ps axc | grep'
+# }}}
+
+# Shortcuts {{{
+alias A="cd ~/Archive && ls -a"
+alias D="cd ~/Documents && ls -a"
+alias d="cd ~/Downloads && ls -a"
+alias m="cd ~/Music && ls"
+alias pp="cd ~/Pictures && ls"
+alias vv="cd ~/Videos && ls"
+alias cf="cd ~/.config && ls"
+alias lb="cd ~/.local/bin && ls"
+alias mt="cd /mnt && ls"
+alias H="cd /srv/http && ls"
+alias W="cd /Pictures/Wallpapers && ls"
+# }}}
+
+# Misc {{{
+alias r='ranger'
+alias h='history'
+#alias vim='nvim'
+alias v='vim'
+alias sv='sudo vim'
+alias wiki='vim ~/Documents/Wiki/index.md'
+alias md='mkdir -p'
+alias rd='rmdir'
+alias cl='clear'
+alias nm='notmuch'
+alias nms='notmuch search'
+alias wiki='vim ~/Documents/Wiki/index.md'
+alias ping='ping -c 3'
+alias list='less'
+alias subl='subl3'
+alias bw="wal -i ~/.config/wall.png" # Rerun pywal
+alias sizes="du -sh * | sort -n"
+alias pr="enscript  --header='$n||%D{%d-%m-%Y}' --footer='footer' --lines-per-page=66 --color"
+alias pastebinit='pastebinit -a "hanska32"'
+alias yt='youtube-dl --add-metadata -ic'
+alias ytm='youtube-dl --extracr-audio --audio-format m4a'
+alias YT='youtube-viewer --add-metadata -icx'
+alias t='~/.local/bin/utils/todo.sh'
+alias tu='~/.local/bin/tuxi'
+alias jls="echo 'Journal'; jrnl -n 10 | sort -r | sed '/^\s*$/d'"
+alias j='jrnl'
+alias la='exa -al --group-directories-first'
+alias am="$TERMINAL amfora localhost"
+# }}}
+
+# Login {{{
+alias omega='ssh omega -l admin'			# Synology DS-412+
+alias moon='ssh moon -l admin'				# Qnap TS-435A
+# }}}
+
+# tmux {{{
+alias mux=tmuxinator
+alias tls='tmux ls'
+alias tat='tmux attach -t'
+alias tns='tmux new-session -s'
+alias tks='tmux kill-session -t'
+# }}}
+
+# Git {{{
+alias ga='git add'
+alias gp='git push'
+alias gl='git log'
+alias gs='git status'
+alias gd='git diff'
+alias gm='git commit -m'
+alias gma='git commit -am'
+alias gb='git branch'
+alias gc='git checkout'
+alias gra='git remote add'
+alias grr='git remote rm'
+alias gpu='git pull'
+alias gcl='git clone'
+# }}}
+
+# Configuration files {{{
+alias bf="vim ~/.config/bmfiles" \
+alias bd="vim ~/.config/bmdirs" \
+#alias cfa='vim ~/.zshrc-personal'
+alias cfb='vim ~/.config/bspwm/bspwmrc'
+alias cfd="vim ~/.local/src/ls/dwm/config.h"
+alias cfh='vim ~/srv/http/hb/updhb'
+alias cfk='vim ~/.config/sxhkd/sxhkdrc'
+alias cfl='vim ~/.config/lf/lfrc'
+alias cfm='vim ~/.config/mutt/muttrc'
+alias cfp='vim ~/.config/polybar/config'
+alias cfr='vim ~/.config/ranger/rc.conf'
+alias cfs='vim ~/.config/bspwm/sxhkd/sxhkdrc'
+alias cft='vim ~/.tmux.conf'
+alias cfu='vim ~/.config/newsboat/urls'
+alias cfv='vim ~/.config/nvim/init.vim'
+alias cfw='vim ~/Documents/Wiki/index.md'
+alias cfx='vim ~/.Xdefaults'
+alias cfz='vim ~/.config/zsh/.zshrc'
+# }}}
+
+# Copy/Paste {{{
+alias pbcopy='xclip -selection clipboard'		# copy to clipboard, ctrl+c, ctrl+shift+c
+alias pbpaste='xclip -selection clipboard -o'	# paste from clipboard, ctrl+v, ctrl+shitt+v
+alias pbselect='xclip -selection primary -o'	# paste from highlight, middle click, shift+insert
+alias pbdump='pbpaste | pastebinit | pbcopy'	# dump text to pastebin serverase "$distro" in
+# }}}
+
+# Audio and Music {{{
+alias music='ncmpcpp'
+alias mute='amixer -D pulse sset Master toggle-mute'
+alias pause='mpc toggle'
+alias next='mpc next'
+alias prev='mpc prev'
+# }}}
+
+# Server mounts {{{
+alias mta='sudo mount /home/hans/Archive'
+alias mtd='sudo mount /home/hans/Documents'
+alias mtm='sudo mount /home/hans/Music'
+alias mtv='sudo mount /home/hans/Movies'
+alias mtV='sudo mount /home/hans/Videos'
+alias mtp='sudo mount /home/hans/Photos'
+alias mtw='sudo mount /home/hans/Wallpapers'
+alias mtb='sudo mount /media/blog'
+alias mtA='sudo mount -a'
+alias mtU='sudo umount -a'
+# }}}
+
+# Functions {{{
+# Torrent/Magnet supprt
+tsm()       { transmission-remote -l ;}
+tsmadd()    { transmission-remote -a "$1" ;}
+tsm-purge() { transmission-remote -t "41" --remove-and-delete ;}
+tsm-info()  { transmission-remote -t "$1" -i ;}
+
+# Search the volume catalog
+pd() { grep -i $1 ~/Documents/Other/db/diskcat.db | awk -F';' -f ~/Documents/Other/db/diskcat.awk }
+
+# View  .md files in terminal with glow
+mdless() { glow "$@" -s dark | less -f }
+
+# Search functions
+vs() { du -a ~/.scripts/* ~/.config/* | awk '{print $2}' | fzf | xargs -r $EDITOR }
+
+fv() { fzf | xargs -r -I % $EDITOR % }
+
+# }}}

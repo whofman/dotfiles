@@ -1,0 +1,349 @@
+# sxhkdrc - modified 
+
+###### SUPER + FUNCTION KEYS ######
+# Show Key Bindings
+super + F1
+	urxvt -e "/home/hans/.bin/keysmenu.sh"
+
+# XFCE4 Application Menu
+super + F2
+	xfce4-appfinder
+
+# XFCE4 Settings Menu
+super + F3
+    xfce4-settings-manager
+
+# R   
+super + F4
+    urxvt -e R
+
+# VirtualBox
+super + F5
+    virtualbox
+
+# Vlc
+super + F6
+    vlc --video-on-top
+
+# Rofi
+super + F12
+    rofi -show run
+
+###### SUPER + ... KEYS #####
+
+# Flip layout vertically/horizontally
+super + {_,shift + } a
+	bspc node @/ --flip {vertical,horizontal}
+
+#
+# Chromium
+super + b
+	chromium
+
+# Calcurse
+super + c
+	urxvt -e calcurse
+
+# Quit Windows
+super + shift + c
+	bspc node -c
+
+# dmenu
+super + shift + d
+	dmenu_run -i -nb '#191919' -nf '#fea63c' -sb '#fea63c' -sf '#191919' -fn 'NotoMonoRegular:bold:pixelsize=14'
+
+#	Mutt mail client
+super + e
+    urxvt 'Mail' -e mutt
+
+#	Toggle fullscreen of window
+super + f
+	bspc node --state \~fullscreen
+
+# music player
+super + m
+   urxvt -e  ncmpcpp
+
+super + shift + m
+	urxvt -e ncmpcpp -s visualizer
+
+# Next Window
+super + {_,shift +} n
+	bspc node -f {next,prev}
+
+# Toggle pseudo tiling of window
+super + p
+	bspc node --state \~pseudo_tiled
+
+# kill ??????????????
+super + shift + q
+	bspc node -c
+
+# File Manager
+super + r
+	urxvt -e ranger
+
+# reload bspwm
+super + shift + r
+	~/.config/bspwm/bspwmrc
+
+# Search
+super + s
+	catfish
+
+# reload sxhkd:
+super + shift + s
+	pkill -USR1 -x sxhkd
+
+# Newsboat
+super + t
+    urxvt -e newsboat
+
+# htop
+super + u
+    urxvt 'htop task manager' -e htop
+
+# Another File manager
+super + shift + u
+	thunar
+
+# Pavucontrol
+super + v
+    pavucontrol
+
+# Browser
+super + w
+    waterfox
+
+# Oblogout
+super + x
+    oblogout
+
+# Logout
+super + shift + x
+	bspc quit
+
+# Xkill
+super + Escape
+    xkill
+
+# Terminal emulator
+super + Return
+	urxvt
+
+# Navigate tags/desktops
+super + {Left, Right}
+	bspc desktop -f {prev,next}
+
+###### ALT + ... KEYS ######
+
+# Wallpaper trash
+alt + t
+    variety -t
+
+# Wallpaper next
+alt + n
+    variety -n
+
+# Wallpaper previous
+alt + p
+    variety -p
+
+# Wallpaper favorite
+alt + f
+    variety -f
+
+# Wallpaper previous
+alt + Left
+    variety -p
+
+# Wallpaper next
+alt + Right
+    variety -n
+
+# Wallpaper pause
+alt + Up
+    variety --pause
+
+# Wallpaper resume
+alt + Down
+    variety --resume
+
+###### CONTROL + ALT KEYS ######
+
+# Nitrogen
+ctrl + alt + i
+     nitrogen
+
+# Screen-Locker
+ctrl + alt + k
+     slimlock
+
+# Rofi theme selector
+ctrl + alt + r
+   rofi-theme-selector
+
+# Pulse Audio Control
+ctrl + alt + u
+     pavucontrol
+
+###### VARIETY KEYS WITH PYWAL#
+
+# Wallpaper trash
+alt + shift + t
+    variety -t && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+
+# Wallpaper next
+alt + shift + n
+    variety -n && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+
+# Wallpaper previous
+alt + shift + p
+    variety -p && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+
+# Wallpaper favorite
+alt + shift + f
+    variety -f && wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+
+# Wallpaper update
+alt + shift + u
+    wal -i $(cat $HOME/.config/variety/wallpaper/wallpaper.jpg.txt)&
+
+###### CONTROL + SHIFT KEYS ######
+
+# Xcfe4-TaskManager
+ctrl + shift + Escape
+    xfce4-taskmanager
+
+######     SCREENSHOTS ######
+
+# Scrot
+ctrl + shift + p
+    scrot 'ArcoLinuxD-%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/ScreenPrints)'
+
+# screeenshooter
+ctrl + Print
+     xfce4-screenshooter
+
+# Gnome-Screenshot
+ctrl + shift + Print
+     gnome-screenshot -i
+
+######     MULTIMEDIA KEYS  #######
+
+# Raises volume
+XF86AudioRaiseVolume
+    amixer set Master 10%+
+
+# Lowers volume
+XF86AudioLowerVolume
+    amixer set Master 10%-
+
+# Mute
+XF86AudioMute
+    amixer -D pulse set Master 1+ toggle
+
+# Playerctl works for Pragha, Spotify and others
+#mpc works for ncmpcpp
+
+# PLAY
+XF86AudioPlay
+    mpc toggle
+
+# Next
+XF86AudioNext
+     mpc next
+
+# Previous
+XF86AudioPrev
+    mpc prev
+
+# Stop
+XF86AudioStop
+    mpc stop
+
+# Brightness up
+XF86MonBrightnessUp
+    xbacklight -inc 10
+
+# Brightness down
+XF86MonBrightnessDown
+    xbacklight -dec 10
+
+###### BSPWM LAYOUT KEYS ######
+
+# Focus selected desktop
+super + {1-9,0}
+	bspc desktop -f '^{1-9,10}'
+
+# Move window to selected desktop
+super + shift + {1-9,0}
+    id=$(bspc query -N -n); bspc node -d ^{1-9,10}; bspc node -f ${id}}
+
+# Focus selected desktop
+super + Tab
+	bspc desktop -f '^{1-9,10}'
+
+# Focus next/previous window
+ctrl + alt + Left
+	bspc node --focus west
+
+# Focus next/previous window
+ctrl + alt + Right
+	bspc node --focus east
+
+# Focus Up window
+ctrl + alt + Up
+	bspc node --focus north
+
+# Focus Down window
+ctrl + alt + Down
+	bspc node --focus south
+
+# Rotate desktop
+alt + space
+	bspc node @/ --rotate {90,-90}
+
+# Focus/swap windows by direction
+super + {_,shift + }{h,j,k,l}
+	bspc node --{focus,swap} {west,south,north,east}
+
+# Focus/swap windows by direction
+ctrl + super + {Left,Down,Up,Right}
+	bspc node --{focus} {west,south,north,east}
+
+# Expand tiled space
+alt + shift + {h,j,k,l}
+	bspc node {@west -r -10,@south -r +10,@north -r -10,@east -r +10}
+
+# Contract tiled space
+super + ctrl + {h,j,k,l}
+	bspc node {@east -r -10,@north -r +10,@south -r -10,@west -r +10}
+
+# Increase/decrease window gap on focused desktop
+super + bracket{left,right}
+	bspc config -d focused window_gap $((`bspc config -d focused window_gap` {-,+} 5 ))
+
+# Move floating window
+super + alt + {_,shift + }{Left,Down,Up,Right}
+	~/.config/bspwm/scripts/move-window {_,edge-}{west,south,north,east}
+
+# set the window state
+super + space
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# Focus parent/brother/first/second for preselection
+super + ctrl + {e,r,t,y}
+	bspc node --focus @{parent,brother,first,second}
+
+# Preselect the splitting area for next window on leaf/parent
+super + ctrl + {u,i,o,p}
+	bspc node --presel-dir \~{west,south,north,east}
+
+# Define splitting ratio for next window on leaf/parent
+super + ctrl + {_,shift +}{1-9}
+	bspc node {_,@/} --presel-ratio 0.{1-9}
+
+# Cancel preselection
+super + ctrl + space
+	bspc node --presel-dir cancel
