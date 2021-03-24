@@ -1,3 +1,3 @@
 # dotfiles
 
-Experimental file to test with *stow*.
+Experimental repo to test with *stow*.
