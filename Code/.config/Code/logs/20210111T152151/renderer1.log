@@ -1,0 +1,1 @@
+[2021-01-11 15:21:52.241] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/usr/share/xsessions/.vscode'

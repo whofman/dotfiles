@@ -1,0 +1,1 @@
+"use strict";var TabNavigator=function(){var n=function(n){return chrome.runtime.getURL(n)},t=function(t,i){var r=n(t);chrome.tabs.create({url:r});i&&i()},i=function(n,t,i){var r=n.tabId||n.id;i=i||function(){};chrome.tabs.update(n.id,{url:t},i)};return{getLocalUrl:n,goTo:i,openTab:t}}()

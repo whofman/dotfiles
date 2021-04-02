@@ -1,0 +1,11 @@
+[virt-viewer]
+share-clipboard=true
+
+#UB2010
+
+[8024ba15-c986-44e6-8df3-e2f0cac3034f]
+monitor-mapping=1:1;
+
+#ReviOS
+[985f8c65-a3ac-4486-b85a-041ba8db9459]
+monitor-mapping=1:1;

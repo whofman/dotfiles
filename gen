@@ -1,0 +1,11 @@
+#!/bin/sh
+# Create dotfiles entry from ~/.config and use stow -S to setup symlinks
+if [ -d ~/.config/"$1" ]; then
+#	pushd ~/dotfiles
+	mkdir -p "$1/.config"
+	mv ~/.config/"$1" "$1/.config"
+	stow -S "$1"
+#	popd
+else
+	echo "$1 not found!"
+fi

@@ -1,0 +1,24 @@
+# ~/.config/notmuch-config
+
+[database]
+path=/home/hans/.local/share/mail
+
+[user]
+name=Hans Hofman
+primary_email=hans.w.hofman@gmail.com
+other-email=hans@hahoweb.nl
+
+other_email=hans@hahoweb.nl;wjh.hofman@posteo.net;wjh.hofman@outlook.com;
+
+[new]
+tags=unread;inbox;
+ignore=
+
+[search]
+exclude_tags=deleted;spam;
+
+[maildir]
+synchronize_flags=true
+
+[crypto]
+gpg_path=gpg

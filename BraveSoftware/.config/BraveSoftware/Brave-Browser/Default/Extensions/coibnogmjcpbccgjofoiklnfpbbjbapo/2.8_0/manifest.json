@@ -1,0 +1,17 @@
+{
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [ "adblockerforgmail.css" ],
+      "matches": [ "http://mail.google.com/*", "https://mail.google.com/*" ]
+   } ],
+   "description": "Hide ads in Gmail, and more cool stuff (see http://doiop.com/gmailads for more info). No Javascript, CSS only.",
+   "icons": {
+      "128": "noads128.png",
+      "48": "noads48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCpjLKGTCe6lOhFOV9oPKQuQ6yHJxuOJyRaSWvC4MIIOVUJ4X5Fb21M+gevfqTLMglebbtgCJtRN+wzfEBvJQ3Hu+R7A81zmduGhSoPwoRWGkNjpUsaou5mE9Il09PXuTNi2F9VjJy3uPtEz6e+auXbKuwvGiXmVkAY3Lh9AK5jAQIDAQAB",
+   "manifest_version": 2,
+   "name": "Ad-blocker for Gmail™",
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "2.8"
+}

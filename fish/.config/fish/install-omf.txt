@@ -1,0 +1,5 @@
+# Install oh-my-fish
+
+rm -fr ~/.local/share/omf
+
+fish install-omf --path=~/.local/share/omf --config=~/.config/omf

@@ -1,0 +1,21 @@
+{
+   "content_scripts": [ {
+      "css": [ "blokkadepagina.css" ],
+      "js": [ "simpleforward.js" ],
+      "matches": [ "*://*.blokkade.ziggo.nl/*", "*://*.thepiratebay.se/*", "*://*.thepiratebay.org/*", "http://thepiratebay.se/*", "http://thepiratebay.org/*", "*://*.upc.nl/blokkades/*", "http://194.71.107.82/", "http://www.xs4all.nl/geblokkeerd/*" ],
+      "run_at": "document_start"
+   } ],
+   "description": "It forwards you when your ISP has blocked TPB",
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDcuJ1EIMQy8mZ1Kc9JO/RMck7U4NOpMbRprEKYAE6e7qVgJwbewDdr/65RoL6YM9ng0H7CTUENxFuQzOYrYTW662obFrljsYVQwPxqPBHVZRqreV7uWMUXgBOGwXG59lmJXl2BdVK6ubET7nZEEB9uAvUpF0iAv0uEhE6gOwRqrQIDAQAB",
+   "manifest_version": 2,
+   "name": "The Piratebay Forwarder",
+   "options_page": "options.html",
+   "permissions": [ "*://*/*" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}

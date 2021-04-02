@@ -1,0 +1,25 @@
+2021/03/16-10:40:04.579 d28d5 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/MANIFEST-000001
+2021/03/16-10:40:04.579 d28d5 Recovering log #99
+2021/03/16-10:40:04.584 d28d5 Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/000099.log 
+2021/03/16-10:40:04.584 d28d5 Delete type=2 #98
+2021/03/16-10:40:04.635 d28d4 Level-0 table #104: started
+2021/03/16-10:40:04.642 d28d4 Level-0 table #104: 275015 bytes OK
+2021/03/16-10:40:04.646 d28d4 Delete type=0 #99
+2021/03/16-10:40:04.646 d28d3 Manual compaction at level-0 from '\x00,\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at '\x00,\x01\x02\x01\x03\x00f\x00o\x00o' @ 36814 : 1
+2021/03/16-10:40:04.646 d28d3 Compacting 1@0 + 1@1 files
+2021/03/16-10:40:04.659 d28d3 Generated table #105@0: 2834 keys, 47144 bytes
+2021/03/16-10:40:04.659 d28d3 Compacted 1@0 + 1@1 files => 47144 bytes
+2021/03/16-10:40:04.664 d28d3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/03/16-10:40:04.664 d28d3 Delete type=2 #104
+2021/03/16-10:40:04.664 d28d3 Manual compaction at level-0 from '\x00,\x01\x02\x01\x03\x00f\x00o\x00o' @ 36814 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/03/16-10:40:20.434 d2a96 Level-0 table #107: started
+2021/03/16-10:40:20.440 d2a96 Level-0 table #107: 123671 bytes OK
+2021/03/16-10:40:20.444 d2a96 Delete type=2 #101
+2021/03/16-10:40:20.444 d2a96 Delete type=0 #103
+2021/03/16-10:40:20.444 d2a96 Manual compaction at level-0 from '\x00-\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at '\x00-\x01\x02\x01\x03\x00f\x00o\x00o' @ 37809 : 1
+2021/03/16-10:40:20.444 d2a96 Compacting 1@0 + 1@1 files
+2021/03/16-10:40:20.457 d2a96 Generated table #108@0: 2856 keys, 47578 bytes
+2021/03/16-10:40:20.457 d2a96 Compacted 1@0 + 1@1 files => 47578 bytes
+2021/03/16-10:40:20.460 d2a96 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/03/16-10:40:20.460 d2a96 Delete type=2 #107
+2021/03/16-10:40:20.460 d2a96 Manual compaction at level-0 from '\x00-\x01\x02\x01\x03\x00f\x00o\x00o' @ 37809 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at (end)

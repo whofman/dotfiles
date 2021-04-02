@@ -1,0 +1,25 @@
+2021/01/02-15:51:07.582 359ce Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/MANIFEST-000001
+2021/01/02-15:51:07.583 359ce Recovering log #92
+2021/01/02-15:51:07.590 359ce Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/000092.log 
+2021/01/02-15:51:07.591 359ce Delete type=2 #90
+2021/01/02-15:51:07.630 359d8 Level-0 table #97: started
+2021/01/02-15:51:07.637 359d8 Level-0 table #97: 311287 bytes OK
+2021/01/02-15:51:07.641 359d8 Delete type=0 #92
+2021/01/02-15:51:07.641 359d8 Manual compaction at level-0 from '\x00*\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00+\x00\x00\x00' @ 0 : 0; will stop at '\x00*\x01\x02\x01\x03\x00f\x00o\x00o' @ 33000 : 1
+2021/01/02-15:51:07.641 359d8 Compacting 1@0 + 1@1 files
+2021/01/02-15:51:07.658 359d8 Generated table #98@0: 2803 keys, 49162 bytes
+2021/01/02-15:51:07.658 359d8 Compacted 1@0 + 1@1 files => 49162 bytes
+2021/01/02-15:51:07.662 359d8 compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/01/02-15:51:07.662 359d8 Delete type=2 #97
+2021/01/02-15:51:07.662 359d8 Manual compaction at level-0 from '\x00*\x01\x02\x01\x03\x00f\x00o\x00o' @ 33000 : 1 .. '\x00+\x00\x00\x00' @ 0 : 0; will stop at (end)
+2021/01/02-15:51:17.481 359ff Level-0 table #100: started
+2021/01/02-15:51:17.488 359ff Level-0 table #100: 152770 bytes OK
+2021/01/02-15:51:17.491 359ff Delete type=2 #94
+2021/01/02-15:51:17.491 359ff Delete type=0 #96
+2021/01/02-15:51:17.492 359ff Manual compaction at level-0 from '\x00+\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00,\x00\x00\x00' @ 0 : 0; will stop at '\x00+\x01\x02\x01\x03\x00f\x00o\x00o' @ 34237 : 1
+2021/01/02-15:51:17.492 359ff Compacting 1@0 + 1@1 files
+2021/01/02-15:51:17.503 359ff Generated table #101@0: 2802 keys, 46982 bytes
+2021/01/02-15:51:17.503 359ff Compacted 1@0 + 1@1 files => 46982 bytes
+2021/01/02-15:51:17.506 359ff compacted to: files[ 0 1 1 0 0 0 0 ]
+2021/01/02-15:51:17.507 359ff Delete type=2 #100
+2021/01/02-15:51:17.507 359ff Manual compaction at level-0 from '\x00+\x01\x02\x01\x03\x00f\x00o\x00o' @ 34237 : 1 .. '\x00,\x00\x00\x00' @ 0 : 0; will stop at (end)

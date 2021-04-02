@@ -1,0 +1,11 @@
+0
+/usr/share/backgrounds/arcolinux/breakingofday-1920x1080.png
+/usr/share/backgrounds/xfce/xfce-evil.jpg
+/usr/share/backgrounds/arcolinux/harbour-3731x2721.jpg
+/usr/share/backgrounds/arcolinux/sea-whale.jpg
+/usr/share/backgrounds/xfce/xfce-teal.jpg
+/usr/share/backgrounds/arcolinux/arco-login-plasma.jpg
+/usr/share/backgrounds/arcolinux/bluez-7650x5120.jpg
+/usr/share/backgrounds/xfce/Squirrel.jpg
+/usr/share/backgrounds/xfce/xfce-blue.jpg
+/usr/share/backgrounds/arcolinux/arco-wallpaper.jpg

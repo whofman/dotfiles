@@ -1,0 +1,13 @@
+{
+   "content_scripts": [ {
+      "js": [ "redditInlineTipping.bundle.js" ],
+      "matches": [ "https://old.reddit.com/*", "https://reddit.com/*", "https://www.reddit.com/*" ],
+      "run_at": "document_end"
+   } ],
+   "default_locale": "en_US",
+   "description": "",
+   "key": "3LPkHVzYPnczW8q9NemPJ71ORKtcqpWrOYo0tWD9CRA=",
+   "manifest_version": 2,
+   "name": "greaselion-3",
+   "version": "1.0"
+}

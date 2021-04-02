@@ -1,0 +1,1 @@
+[2021-02-07 16:17:28.665] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/hans/.config/leftwm/themes/basic_polybar/.vscode'

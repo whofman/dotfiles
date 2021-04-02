@@ -1,0 +1,23 @@
+2021/01/02-15:51:06.303 359e4 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/MANIFEST-000001
+2021/01/02-15:51:06.303 359e4 Recovering log #37
+2021/01/02-15:51:06.305 359e4 Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Storage/leveldb/000037.log 
+2021/01/02-15:51:13.109 359d7 Level-0 table #41: started
+2021/01/02-15:51:13.116 359d7 Level-0 table #41: 111651 bytes OK
+2021/01/02-15:51:13.120 359d7 Delete type=0 #37
+2021/01/02-15:51:19.476 359fc Level-0 table #43: started
+2021/01/02-15:51:19.498 359fc Level-0 table #43: 1699694 bytes OK
+2021/01/02-15:51:19.503 359fc Delete type=0 #40
+2021/01/03-00:04:33.912 3fad1 Level-0 table #45: started
+2021/01/03-00:04:33.925 3fad1 Level-0 table #45: 334745 bytes OK
+2021/01/03-00:04:33.930 3fad1 Delete type=0 #42
+2021/01/03-00:04:33.931 3d4f1 Compacting 4@0 + 2@1 files
+2021/01/03-00:04:33.956 3d4f1 Generated table #46@0: 458 keys, 2103775 bytes
+2021/01/03-00:04:33.965 3d4f1 Generated table #47@0: 248 keys, 145534 bytes
+2021/01/03-00:04:33.965 3d4f1 Compacted 4@0 + 2@1 files => 2249309 bytes
+2021/01/03-00:04:33.969 3d4f1 compacted to: files[ 0 2 1 0 0 0 0 ]
+2021/01/03-00:04:33.970 3d4f1 Delete type=2 #45
+2021/01/03-00:04:33.970 3d4f1 Delete type=2 #41
+2021/01/03-00:04:33.970 3d4f1 Delete type=2 #35
+2021/01/03-00:04:33.970 3d4f1 Delete type=2 #43
+2021/01/03-00:04:33.970 3d4f1 Delete type=2 #34
+2021/01/03-00:04:33.970 3d4f1 Delete type=2 #38

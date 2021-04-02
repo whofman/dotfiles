@@ -1,0 +1,22 @@
+{
+   "author": "Taco Foundry (tacoapp.com)",
+   "chrome_url_overrides": {
+      "newtab": "tacoapp.html"
+   },
+   "content_security_policy": "script-src 'self' https://tacoapp.com https://d3cfga8zrau5x0.cloudfront.net 'unsafe-eval'; object-src 'self'",
+   "description": "See your tasks from 40+ other services on Chrome's new tab page. Asana, Basecamp, GitHub, Gmail, OmniFocus, Trello, Zendesk, more.",
+   "homepage_url": "https://tacoapp.com/",
+   "icons": {
+      "128": "icon_128.png",
+      "16": "icon_16.png",
+      "48": "icon_48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgrNjjPmDr3CD85264Obhtf3if/8C8Jz37eARH+M25bxv7+/9S5alOncu5xZFEqGs3yexFk2e5WR9MtBnMY6mghcAtX+1L06On4TOGKDtomRR2bX/ZKljivvLi3FspCA1COdWvD0uCtVBB1HS1Xgv1rZ9KrRcpXbamKFs02l9n438HrIp7HBUzvzAQA7GQTZC1YDmdSc6p8Ht9TDTfdUoWv4muzvy5X3HsRy8Ubgt/Nbq4U/MC3RG1rCXAd9UgnHvRRxfYNkW/YV5pm98XjzFNAY3qWkxmqpcoizsYUOAB5Qp89LOeO0B7XPI0EE7AjRoryg2Z1KOM+SDcNzoUW1E9QIDAQAB",
+   "manifest_version": 2,
+   "name": "Taco",
+   "optional_permissions": [ "topSites" ],
+   "permissions": [ "storage", "https://tacoapp.com/*", "https://d3cfga8zrau5x0.cloudfront.net/*", "chrome://favicon/" ],
+   "short_name": "Taco",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.1.3"
+}

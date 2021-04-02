@@ -1,0 +1,391 @@
+<div style="display:none" id="ui">
+
+<!-- Popup -->
+
+<template id="popup#head">
+  <div class="link-queue">
+    <div class="link-queue--text">
+      <div>Open <span class="num">10</span> post<span class="one">s</span></div>
+    </div>
+    <a href="#" class="close">×</a>
+  </div>
+  <div id="notifications">
+    <div class="notifications--content"></div>
+    <span class="close">×</span>
+  </div>
+</template>
+
+<!-- Main -->
+
+<template id="screen#main" class="screen-with-topbar">
+  <div class="screen-container screen-with-topbar--content-container">
+    <div class="screen-main-content">
+      <div class="consume-header consume-header--inline hide--all-but-consume hide--mobile">
+        <div class="nav-button nav-button--icon settings-button push-right" title="Settings">
+          <svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m11.8738492 7.98646825c-2.14623015 0-3.88623015 1.74-3.88623015 3.88738095 0 2.1462302 1.74 3.8862302 3.88623015 3.8862302 2.1462302 0 3.887381-1.74 3.887381-3.8862302 0-2.14738095-1.7411508-3.88738095-3.887381-3.88738095zm7.3340079 5.62047615c-.3360317.1162302-.6904761.4315477-.7871428.6985318s-.2946032 1.1956746-.1369445 1.5144444l.4234921 1.2532143c.0874603.3452381-.0471825.8331746-.2992063 1.0851984l-.2497223.2497223c-.2520238.2520238-.7399603.384365-1.0840476.2957539l-1.2497619-.4246428c-.3199206-.1553572-.7894444-.1806746-1.042619-.0552381-.2543254.1254365-1.0587302.6478968-1.1749604.9839285l-.5788492 1.171508c-.1806746.3072619-.6202777.5581349-.975873.5581349h-.3532936c-.3567461 0-.7963492-.250873-.9770238-.5569841l-.5823016-1.1761111c-.1150794-.3371826-.43154764-.6893254-.70083336-.7836905-.27043651-.0955159-1.20142857-.2934524-1.52134921-.1369445l-1.24055555.4200397c-.3452381.0886111-.8331746-.0437301-1.08519841-.2957539l-.24972223-.2497223c-.25087301-.2520238-.38436507-.7399603-.29690476-1.0851984l.42234127-1.2474603c.15650794-.3199206.18527778-.7894444.06444445-1.042619-.12083334-.2543254-.63869048-1.0564286-.97587302-1.171508l-1.18531746-.5846032c-.3072619-.1806746-.55813492-.6191269-.55813492-.975873v-.3532936c0-.3555953.25087302-.7951984.55813492-.975873l1.18992064-.5880556c.33603174-.1150794.69047619-.42464285.78714285-.6881746.09551588-.26353174.28884921-1.18301587.13234127-1.5029365l-.43154762-1.26702381c-.0897619-.3452381.04142857-.83202381.29345238-1.08404762l.24972223-.24972223c.25202381-.25202381.73996031-.38436507 1.08519841-.29575396l1.2693254.43154762c.31992063.15650793.78484127.18527777 1.0322619.06214285.24972222-.12313492 1.03916662-.64329365 1.15309522-.98047619l.5892064-1.18992063c.1818254-.30726191.6214285-.55698413.9781746-.55698413h.3532936c.3555953 0 .7951984.25087302.975873.55698413l.5834524 1.18761904c.117381.33603175.4315476.68702381.6996826.77908731.2669841.09321428 1.193373.28539682 1.5132936.12888889l1.2486111-.42234127c.3452381-.08746032.8331746.04718253 1.0851984.29920634l.2497223.24972223c.2520238.25202381.3855158.73996031.2969047 1.08404762l-.4211905 1.24170634c-.1553571.32107143-.1818254.79059524-.0598412 1.04607143.1219841.2543254.6432936 1.05757934.9804762 1.17265874l1.1772619.5834524c.3061111.1818254.5558333.6225793.5558333.9781746v.3532936c0 .3567461-.250873.7963492-.5569841.9770238z" fill="#8c8c8c" fill-rule="evenodd"/></svg>
+        </div>
+        <h1 class="feeder-logo push-center">Feeder</h1>
+        <div class="nav-button nav-button--icon add-feed-button push-left" title="Add feed">
+          <svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13 11v-5.99912834c0-.5562408-.4477153-1.00087166-1-1.00087166-.5561352 0-1 .4481055-1 1.00087166v5.99912834h-5.99912834c-.5562408 0-1.00087166.4477153-1.00087166 1 0 .5561352.4481055 1 1.00087166 1h5.99912834v5.9991283c0 .5562408.4477153 1.0008717 1 1.0008717.5561352 0 1-.4481055 1-1.0008717v-5.9991283h5.9991283c.5562408 0 1.0008717-.4477153 1.0008717-1 0-.5561352-.4481055-1-1.0008717-1z" fill="#8c8c8c" fill-rule="evenodd"/></svg>
+        </div>
+      </div>
+      <tpl from="bar#main"></tpl>
+      <div class="page-scroll-container put-feed-list-here"></div>
+    </div>
+  </div>
+</template>
+
+<template id="count-group">
+  <div class="mark-as-read green-button--extra">✔</div>
+  <div class="count" data="count:text"></div>
+</template>
+
+<template id="bar#top">
+  <div class="bar bar--fixed top">
+    <div class="bar--bottom-cover"></div>
+
+    <div class="nav-button nav-button--icon back smaller-in-ext"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m20 11.5c.2761424 0 .5.2238576.5.5s-.2238576.5-.5.5l-13.12973854.8206087 3.82077834 3.8573439c.4130059.4166507.4119442 1.0929067-.0031851 1.5106257-.4151293.4166506-1.08719281.414514-1.50126039-.0021367l-5.1395662-5.1893809-.04702811.0029393v-.0504232l-.68998017-.6966677c-.20597208-.2083253-.31001983-.4807508-.31001983-.7542445 0-.2734938.10404775-.5459192.31001983-.7542445l.68998017-.696795v-.0476251l.04441079.0027757 5.13793667-5.18868316c.41406758-.41771898 1.08613114-.41878731 1.50126044-.003205s.4172527 1.09290669.0031851 1.51169401l-3.81928022 3.85663795z" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+    <div class="title">
+      <img data="favicon:src" class="title-click-area" />
+      <span data="title:text" class="title-click-area"></span>
+    </div>
+    <tpl from="count-group"></tpl>
+  </div>
+</template>
+
+<template id="bar#main">
+  <div class="bar bar--fixed main">
+    <div class="bar--bottom-cover"></div>
+    <div class="nav-button nav-button--icon smaller-in-ext settings" title="Settings"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m11.8738492 7.98646825c-2.14623015 0-3.88623015 1.74-3.88623015 3.88738095 0 2.1462302 1.74 3.8862302 3.88623015 3.8862302 2.1462302 0 3.887381-1.74 3.887381-3.8862302 0-2.14738095-1.7411508-3.88738095-3.887381-3.88738095zm7.3340079 5.62047615c-.3360317.1162302-.6904761.4315477-.7871428.6985318s-.2946032 1.1956746-.1369445 1.5144444l.4234921 1.2532143c.0874603.3452381-.0471825.8331746-.2992063 1.0851984l-.2497223.2497223c-.2520238.2520238-.7399603.384365-1.0840476.2957539l-1.2497619-.4246428c-.3199206-.1553572-.7894444-.1806746-1.042619-.0552381-.2543254.1254365-1.0587302.6478968-1.1749604.9839285l-.5788492 1.171508c-.1806746.3072619-.6202777.5581349-.975873.5581349h-.3532936c-.3567461 0-.7963492-.250873-.9770238-.5569841l-.5823016-1.1761111c-.1150794-.3371826-.43154764-.6893254-.70083336-.7836905-.27043651-.0955159-1.20142857-.2934524-1.52134921-.1369445l-1.24055555.4200397c-.3452381.0886111-.8331746-.0437301-1.08519841-.2957539l-.24972223-.2497223c-.25087301-.2520238-.38436507-.7399603-.29690476-1.0851984l.42234127-1.2474603c.15650794-.3199206.18527778-.7894444.06444445-1.042619-.12083334-.2543254-.63869048-1.0564286-.97587302-1.171508l-1.18531746-.5846032c-.3072619-.1806746-.55813492-.6191269-.55813492-.975873v-.3532936c0-.3555953.25087302-.7951984.55813492-.975873l1.18992064-.5880556c.33603174-.1150794.69047619-.42464285.78714285-.6881746.09551588-.26353174.28884921-1.18301587.13234127-1.5029365l-.43154762-1.26702381c-.0897619-.3452381.04142857-.83202381.29345238-1.08404762l.24972223-.24972223c.25202381-.25202381.73996031-.38436507 1.08519841-.29575396l1.2693254.43154762c.31992063.15650793.78484127.18527777 1.0322619.06214285.24972222-.12313492 1.03916662-.64329365 1.15309522-.98047619l.5892064-1.18992063c.1818254-.30726191.6214285-.55698413.9781746-.55698413h.3532936c.3555953 0 .7951984.25087302.975873.55698413l.5834524 1.18761904c.117381.33603175.4315476.68702381.6996826.77908731.2669841.09321428 1.193373.28539682 1.5132936.12888889l1.2486111-.42234127c.3452381-.08746032.8331746.04718253 1.0851984.29920634l.2497223.24972223c.2520238.25202381.3855158.73996031.2969047 1.08404762l-.4211905 1.24170634c-.1553571.32107143-.1818254.79059524-.0598412 1.04607143.1219841.2543254.6432936 1.05757934.9804762 1.17265874l1.1772619.5834524c.3061111.1818254.5558333.6225793.5558333.9781746v.3532936c0 .3567461-.250873.7963492-.5569841.9770238z" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+    <div class="nav-button nav-button--icon pro-user to-feeder-co hide--online feeder-online smaller-in-ext"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><g fill="#979797" fill-rule="evenodd"><path d="m16.1568542 7h-2.6568542c-.2761424 0-.5-.22385763-.5-.5 0-.27614237.2238576-.5.5-.5h4c.1380712 0 .2630712.05596441.3535534.14644661s.1464466.2154822.1464466.35355339v4c0 .2761424-.2238576.5-.5.5s-.5-.2238576-.5-.5v-2.92893219l-6.1464466 6.14644659c-.1952622.1952622-.5118446.1952622-.7071068 0-.19526214-.1952621-.19526214-.5118446 0-.7071068z"/><path d="m14 8h-2v.5.5h2c.552 0 1 .448 1 1v6c0 .552-.448 1-1 1h-6c-.552 0-1-.448-1-1v-2h-.5-.5v2c0 1.105.895 2 2 2h6c1.105 0 2-.895 2-2v-6c0-1.105-.895-2-2-2" transform="matrix(0 1 -1 0 24 2)"/><path d="m10.5 8.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5.224.5.5.5.5-.224.5-.5m5 5c-.276 0-.5.224-.5.5s.224.5.5.5.5-.224.5-.5-.224-.5-.5-.5"/></g></svg></div>
+    <div class="option no-pro feeder-online hidden-on-consume">
+      <span class="upgrade">upgrade</span>
+    </div>
+    <div class="button-group" id="filter-settings">
+      <div class="option all current" title="Show all"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m2 7c0-.55228475.45530558-1 .99180311-1h18.01639379c.5477577 0 .9918031.44386482.9918031 1 0 .55228475-.4553056 1-.9918031 1h-18.01639379c-.54775773 0-.99180311-.44386482-.99180311-1zm0 5c0-.5522847.4556644-1 .99539757-1h8.00920483c.5497429 0 .9953976.4438648.9953976 1 0 .5522847-.4556644 1-.9953976 1h-8.00920483c-.5497429 0-.99539757-.4438648-.99539757-1zm0 5c0-.5522847.44892021-1 1.00748397-1h12.98503203c.5564181 0 1.007484.4438648 1.007484 1 0 .5522847-.4489202 1-1.007484 1h-12.98503203c-.55641803 0-1.00748397-.4438648-1.00748397-1z" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+      <div class="option starred" title="Show starred"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16.9390596 20.203454c-.1162292 0-.2579102-.0373291-.419104-.1535583l-4.3725958-3.1076481c-.0610839-.041571-.2027649-.0424194-.2630005.0008484l-4.37259569 3.1076481c-.35971684.2570618-.62186897.1272583-.71688851.0585388-.09671632-.0678711-.30796512-.274878-.18240358-.7084046l1.50843523-5.2540717c.02545166-.0848389-.02205811-.2417908-.08823243-.2935425l-4.21309863-3.3350163c-.34868779-.2774231-.29778446-.56672366-.26045535-.67786259.0373291-.11113893.17137453-.36904911.60659797-.37922978l5.30752014-.14083253c.06956788-.00169678.19173586-.08908082.21973269-.17222292l1.76804216-5.16838439c.1459229-.42589116.4369203-.47170415.5548463-.47170415s.4089234.04581299.5548462.47170415l1.7680422 5.167536c.0288453.08399049.1510132.17137453.218036.17307131l5.3109137.14083253c.4352234.01018067.5684204.26809085.6057495.37922978s.0882325.40043949-.2604553.67701429l-4.2122503 3.3358646c-.0661743.0517517-.1136841.209552-.0899292.2943909l1.5092837 5.2540716c.1264099.4326783-.0856873.6396852-.1815552.7075563-.0534485.0381775-.156952.0941711-.2994813.0941711" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+      <div class="option unread" title="Show unread"><span data="num_unread:text">...</span></div>
+    </div>
+    <div class="nav-button nav-button--icon mark-all-in-tab smaller-in-ext" title="Mark all as read"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m12 5c3.8659932 0 7 3.13400675 7 7 0 3.8659932-3.1340068 7-7 7-3.86599325 0-7-3.1340068-7-7 0-3.86599325 3.13400675-7 7-7zm0 1c-3.3137085 0-6 2.6862915-6 6s2.6862915 6 6 6 6-2.6862915 6-6-2.6862915-6-6-6zm2.6464466 3.64644661.7071068.70710679-4.3535534 4.3535534-2.35355339-2.3535534.70710678-.7071068 1.64644661 1.6465534z" fill="#707070"/></svg></div>
+    <div class="nav-button nav-button--icon add smaller-in-ext" title="Add feed"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m13 11v-5.99912834c0-.5562408-.4477153-1.00087166-1-1.00087166-.5561352 0-1 .4481055-1 1.00087166v5.99912834h-5.99912834c-.5562408 0-1.00087166.4477153-1.00087166 1 0 .5561352.4481055 1 1.00087166 1h5.99912834v5.9991283c0 .5562408.4477153 1.0008717 1 1.0008717.5561352 0 1-.4481055 1-1.0008717v-5.9991283h5.9991283c.5562408 0 1.0008717-.4477153 1.0008717-1 0-.5561352-.4481055-1-1.0008717-1z" fill="#8c8c8c" fill-rule="evenodd"/></svg><span class="bubble" data="num_feeds:text" /></div>
+  </div>
+
+  <div class="mark-all-container"></div>
+</template>
+
+<template id="screen#no-feeds">
+  <div class="import-from">
+    <div class="not-online for-not-logged-in button--secondary spacing--xsmall-bottom get-feeder-pro">Login to Feeder-account</div>
+    <div class="button--link open-sync-settings">Import from .opml</div>
+  </div>
+  <div class="bar bar--no-sides">
+    <div class="title"><span data="title:text"></span></div>
+    <div class="nav-button nav-button--icon done smaller-in-ext done visible"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m19.5984032 6.34444824.0362419.03939341-8.8518966 12.24524515-.0037424-.0033484c-.0100453.011621-.0169392.0250148-.0273784.0364389-.562144.6111887-1.45873809.6267491-2.04648779.059484l-.00374238.0043333-.02324211-.0283633c-.01339376-.0133937-.02875719-.0228482-.04175702-.0368328-.04825693-.0525902-.08646854-.1112864-.12664982-.1686038l-3.99981008-4.8804498c-.01043926-.0108332-.02284818-.0185149-.0328935-.029939-.54126548-.5993708-.52728082-1.5536762.0317117-2.1311836.55859858-.5775074 1.45026846-.5597804 1.99153394.0397873.05219627.0577114.09474115.1213318.13649817.1851491l3.03979264 3.4829685 8.81841225-10.01419926.029545.03210563c.2970264-.31849574.7750654-.31770787 1.070516.00374237.2954506.32125328.2962385.84124632.0033485 1.1642723" fill="#979797"/></svg></div>
+  </div>
+
+  <tpl from="feed-suggestion" class="tpl-list-item-feed list-item" many="feeds"></tpl>
+
+  <div class="arrow-text right-up add-feeds-here">Click here to add feeds</div>
+</template>
+
+<template id="feed-suggestion">
+  <div class="item">
+    <div class="item-icon"><img data="favicon:src" /></div>
+    <div class="item-title">
+      <span class="item-title--text" data="title:text"></span>
+    </div>
+    <div class="item-count-holder">
+      <div class="tpl-count-group">
+        <div class="count" data="count:text"></div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="screen#welcome">
+  <div class="welcome-container screen-overlay--container">
+    <div class="cover"></div>
+
+    <h3 class="margin-bottom-small">Welcome to Feeder</h3>
+    <h2 class="with-ribbon">The easiest way to<br>follow your favorite sites</h2>
+
+    <div class="get-started-button spacing--medium-vertical">
+      <div class="button--primary button--100 start-using-feeder">Get started</div>
+    </div>
+    <div class="feeder-logo"></div>
+  </div>
+</template>
+
+<template id="screen#signup">
+  <div class="signup-container screen-overlay--container">
+    <div class="cover"></div>
+    <div class="bar">
+      <div class="pill-buttons">
+        <a href="" class="pill-buttons--button signup-please active">Sign up</a>
+        <a href="" class="pill-buttons--button already-account">Log in</a>
+      </div>
+    </div>
+    <form class="compact-form signup-form">
+      <div class="main-header margin-bottom-small">Hello!</div>
+      <div class="main-subtext no-image">Get started by signing up</div>
+
+      <p class="input top">
+        <label>
+          <span>E-mail:</span>
+          <input type="text" name="email" placeholder="E-mail" />
+        </label>
+      </p>
+      <p class="input middle">
+        <label>
+          <span>Password:</span>
+          <input type="password" name="password" placeholder="Password" />
+        </label>
+      </p>
+      <p class="input bottom">
+        <label>
+          <span>Confirm Password:</span>
+          <input type="password" name="password_confirmation" placeholder="Confirm password" />
+        </label>
+      </p>
+      <p class="submit"><input type="submit" value="Sign up" class="button--primary button--100" /></p>
+      <p class="terms-and-conditions margin-bottom-large"><a href="">By signing up you agree to our terms</a></p>
+      <div class="skip-signup">
+        <a href="" class="button--secondary i-dont-want-pro">Continue without signing up</a>
+      </div>
+    </form>
+
+    <form class="compact-form login-form">
+      <div class="main-header margin-bottom-small">Log in</div>
+      <div class="main-subtext no-image">Access your feeds</div>
+
+      <p class="input top">
+        <label>
+          <span>E-mail:</span>
+          <input type="text" name="email" placeholder="E-mail" />
+        </label>
+      </p>
+      <p class="input bottom">
+        <label>
+          <span>Password:</span>
+          <input type="password" name="password" placeholder="Password" />
+        </label>
+      </p>
+      <p class="submit"><input type="submit" value="Log in" class="button--primary" /></p>
+      <p class="forgot-link margin-bottom-large"><a href="https://feeder.co/forgot" target="_blank">Forgot password?</a></p>
+      <div class="skip-signup">
+        <a href="" class="button--secondary i-dont-want-pro">Continue without logging in</a>
+      </div>
+    </form>
+  </div>
+</template>
+
+<template id="screen#expired">
+  <div class="trial-expired">
+    <h2 class="margin-bottom-small">Your trial of <span class="product-name"></span> is over</h2>
+    <p class="margin-bottom-small">Add payment information to continue using <span class="product-name"></span>, or downgrade to <b>Feeder Basic</b> for free.</p>
+    <p class="margin-bottom-medium">Compare our plans pick and the one that suit your needs.</p>
+    <p><a class="button--primary button--100 add-payment" href="">Click here to choose</a></p>
+  </div>
+</template>
+
+<template id="screen#user-message">
+  <div class="user-message-container"></div>
+</template>
+
+<template id="screen#connected-automatically">
+  <div class="">
+    <h2 class="margin-bottom-medium">Hello there.</h2>
+
+    <div class="margin-bottom-medium">
+      We detected that you were logged in as <strong data="email:text"></strong>.
+      If this is not you, go to the sync settings.
+    </div>
+
+    <div class="the-buttons">
+      <div class="button--danger">
+        Log out
+      </div>
+
+      <div class="button--primary">
+        OK
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="screen#could-not-verify-token">
+  <div class="">
+    <h2 class="margin-bottom-medium">Hello there.</h2>
+
+    <div class="margin-bottom-medium">
+      There was a problem with your login to Feeder. Please login again.
+    </div>
+
+    <div class="the-buttons">
+      <div class="button--grey goto-settings-button">
+        Go to settings
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="screen#payment-required">
+  <div>
+    <h2 class="margin-bottom-medium">Payment required</h2>
+
+    <div class="margin-bottom-medium">
+      We detected a problem with your payments. Please visit the billing page to read more.
+    </div>
+
+    <div class="button--primary go-to-billing-button">
+      Go to billing
+    </div>
+  </div>
+</template>
+
+<template id="screen#pro-only-feature">
+  <div>
+    <h2 class="margin-bottom-medium">Feature locked</h2>
+
+    <div class="margin-bottom-medium">
+      This and many more features are available with a Feeder Pro account.
+    </div>
+
+    <div class="button--primary">
+      Upgrade now
+    </div>
+  </div>
+</template>
+
+<template id="screen#is-in-sync">
+  <div class="vertical-align-box">
+    <h2 class="margin-bottom-large">Sync in progress...</h2>
+
+    <div class="margin-bottom-medium">
+      <div class="loading-icon"></div>
+    </div>
+  </div>
+</template>
+
+<!-- Folder -->
+
+<template id="screen#folder" class="screen-with-topbar">
+  <div class="screen-with-topbar--content-container">
+    <tpl from="bar#top"></tpl>
+    <div class="page-scroll-container">
+      <div class="tpl-feed-list"></div>
+    </div>
+  </div>
+</template>
+
+<!-- Posts -->
+
+<template id="screen#posts" class="screen-with-topbar">
+  <div class="screen-with-topbar--content-container">
+    <tpl from="bar#top"></tpl>
+    <div class="page-scroll-container">
+      <div class="post-list-container" style="height: 100%"></div>
+    </div>
+  </div>
+</template>
+
+<template id="bar#navigate">
+  <div class="bar bar--fixed top">
+    <div class="bar--bottom-cover"></div>
+
+    <div class="nav-button nav-button--icon back smaller-in-ext"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m20 11.5c.2761424 0 .5.2238576.5.5s-.2238576.5-.5.5l-13.12973854.8206087 3.82077834 3.8573439c.4130059.4166507.4119442 1.0929067-.0031851 1.5106257-.4151293.4166506-1.08719281.414514-1.50126039-.0021367l-5.1395662-5.1893809-.04702811.0029393v-.0504232l-.68998017-.6966677c-.20597208-.2083253-.31001983-.4807508-.31001983-.7542445 0-.2734938.10404775-.5459192.31001983-.7542445l.68998017-.696795v-.0476251l.04441079.0027757 5.13793667-5.18868316c.41406758-.41771898 1.08613114-.41878731 1.50126044-.003205s.4172527 1.09290669.0031851 1.51169401l-3.81928022 3.85663795z" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+    <div class="title">
+      <img data="favicon:src" />
+      <span data="title:text"></span>
+    </div>
+  </div>
+</template>
+
+<template id="slider">
+  <div class="slider">
+    <div class="current">
+      <div class="handle"></div>
+    </div>
+  </div>
+  <div class="slider-minimum-value"></div>
+</template>
+
+<template id="screen#popup-consume" class="screen-with-topbar">
+  <div class="screen-with-topbar--content-container">
+    <tpl from="bar#navigate-for-post"></tpl>
+    <x-iframe
+      sandbox="allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts"
+      allowfullscreen="true"
+      webkitallowfullscreen="true"
+      mozallowfullscreen="true"></x-iframe>
+    </div>
+</template>
+
+<template id="bar#navigate-for-post">
+  <div class="bar bar--fixed bar--clickable">
+    <div class="bar--bottom-cover"></div>
+
+    <div class="back nav-button nav-button--icon"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m20 11.5c.2761424 0 .5.2238576.5.5s-.2238576.5-.5.5l-13.12973854.8206087 3.82077834 3.8573439c.4130059.4166507.4119442 1.0929067-.0031851 1.5106257-.4151293.4166506-1.08719281.414514-1.50126039-.0021367l-5.1395662-5.1893809-.04702811.0029393v-.0504232l-.68998017-.6966677c-.20597208-.2083253-.31001983-.4807508-.31001983-.7542445 0-.2734938.10404775-.5459192.31001983-.7542445l.68998017-.696795v-.0476251l.04441079.0027757 5.13793667-5.18868316c.41406758-.41771898 1.08613114-.41878731 1.50126044-.003205s.4172527 1.09290669.0031851 1.51169401l-3.81928022 3.85663795z" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+    <div class="title">
+      <div class="item-starred"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m16.9390596 20.203454c-.1162292 0-.2579102-.0373291-.419104-.1535583l-4.3725958-3.1076481c-.0610839-.041571-.2027649-.0424194-.2630005.0008484l-4.37259569 3.1076481c-.35971684.2570618-.62186897.1272583-.71688851.0585388-.09671632-.0678711-.30796512-.274878-.18240358-.7084046l1.50843523-5.2540717c.02545166-.0848389-.02205811-.2417908-.08823243-.2935425l-4.21309863-3.3350163c-.34868779-.2774231-.29778446-.56672366-.26045535-.67786259.0373291-.11113893.17137453-.36904911.60659797-.37922978l5.30752014-.14083253c.06956788-.00169678.19173586-.08908082.21973269-.17222292l1.76804216-5.16838439c.1459229-.42589116.4369203-.47170415.5548463-.47170415s.4089234.04581299.5548462.47170415l1.7680422 5.167536c.0288453.08399049.1510132.17137453.218036.17307131l5.3109137.14083253c.4352234.01018067.5684204.26809085.6057495.37922978s.0882325.40043949-.2604553.67701429l-4.2122503 3.3358646c-.0661743.0517517-.1136841.209552-.0899292.2943909l1.5092837 5.2540716c.1264099.4326783-.0856873.6396852-.1815552.7075563-.0534485.0381775-.156952.0941711-.2994813.0941711" fill="#8c8c8c" fill-rule="evenodd"/></svg></div>
+      <span data="title:text"></span>
+    </div>
+
+    <div class="buttons arrows">
+      <div class="history-previous nav-button nav-button--icon"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m11.9986646 15c-.2734938 0-.5459192-.1040478-.7542445-.3100198l-5.93032756-5.87232766c-.41771898-.41406758-.41878731-1.08613111-.003205-1.5012604s1.09290669-.41725271 1.51169401-.00318514l5.17608305 5.1259443 5.179288-5.13019114c.4166507-.41300587 1.0929067-.41194416 1.5106257.00318513.4166506.41512929.414514 1.08719282-.0021367 1.5012604l-5.9335325 5.87657451c-.2083253.205972-.4807508.3100198-.7542445.3100198" fill="#8c8c8c" fill-rule="evenodd" transform="matrix(-1 0 0 -1 24 22)"/></svg></div>
+      <div class="history-next nav-button nav-button--icon"><svg class="feeder-icon" aria-hidden=true  height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m11.9986646 16c-.2734938 0-.5459192-.1040478-.7542445-.3100198l-5.93032756-5.87232766c-.41771898-.41406758-.41878731-1.08613111-.003205-1.5012604s1.09290669-.41725271 1.51169401-.00318514l5.17608305 5.1259443 5.179288-5.13019114c.4166507-.41300587 1.0929067-.41194416 1.5106257.00318513.4166506.41512929.414514 1.08719282-.0021367 1.5012604l-5.9335325 5.87657451c-.2083253.205972-.4807508.3100198-.7542445.3100198" fill="#707070" fill-rule="evenodd"/></svg></div>
+    </div>
+  </div>
+</template>
+
+<template id="screen#iframe">
+  <tpl from="bar#top"></tpl>
+  <x-iframe></x-iframe>
+</template>
+
+<template id="screen#get-started">
+  <div class="modal two-phase-modal">
+    <div class="two-phase-modal-inner">
+      <div class="setup phase">
+        <h2 class="margin-bottom-small">Get started by following feeds</h2>
+        <p>Pick categories you like and we’ll get you started with a collection of great feeds to follow.</p>
+        <tpl from="suggestion-box" class="margin-bottom-medium" key="suggestions"></tpl>
+        <div class="margin-bottom-small add-and-get-started-container">
+          <a href="" class="add-and-get-started button--primary">Get started</a>
+        </div>
+        <div class="margin-bottom-small pick-one-to-get-started-container">
+          <p>Pick at least one to get started</p>
+        </div>
+        <div class="alternate-buttons">
+          <a href="" class="button--secondary file-input-container">
+            Import from .OPML
+            <input type="file" class="opml-file">
+          </a>
+          <a href="" class="skip button--secondary button--small">Skip</a>
+        </div>
+      </div>
+      <div class="loading phase">
+        <h2 class="margin-bottom-small">Processing...</h2>
+        <p>Please wait while we're preparing your account.</p>
+        <div class="loading-icon margin-bottom-medium"></div>
+        <p class="status-text" data="loadingText:text"></p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template id="suggestion-box">
+  <tpl from="suggestion-box#item" many="suggestions"></tpl>
+</template>
+
+<template id="suggestion-box#item">
+  <span class="suggestion-title h3 serif" data="name:html;id:data-id"></span>
+</template>
+
+<template id="popup">
+  <div class="popup">
+    <div class="popup-content"></div>
+  </div>
+</template>
+
+</div>
