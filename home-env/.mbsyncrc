@@ -1,0 +1,156 @@
+IMAPStore wjh.hofman@posteo.net-remote
+Host posteo.de
+Port 993
+User wjh.hofman@posteo.net
+PassCmd "pass mw-wjh.hofman@posteo.net"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore wjh.hofman@posteo.net-local
+Subfolders Verbatim
+Path /home/hans/.local/share/mail/wjh.hofman@posteo.net/
+Inbox /home/hans/.local/share/mail/wjh.hofman@posteo.net/INBOX
+Flatten .
+
+Channel wjh.hofman@posteo.net
+Expunge Both
+Master :wjh.hofman@posteo.net-remote:
+Slave :wjh.hofman@posteo.net-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore wjh.hofman@outlook.com-remote
+Host imap-mail.outlook.com
+Port 993
+User wjh.hofman@outlook.com
+PassCmd "pass mw-wjh.hofman@outlook.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore wjh.hofman@outlook.com-local
+Subfolders Verbatim
+Path /home/hans/.local/share/mail/wjh.hofman@outlook.com/
+Inbox /home/hans/.local/share/mail/wjh.hofman@outlook.com/INBOX
+Flatten .
+
+Channel wjh.hofman@outlook.com
+Expunge Both
+Master :wjh.hofman@outlook.com-remote:
+Slave :wjh.hofman@outlook.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore hans@hahoweb.nl-remote
+Host imap.gmail.com
+Port 993
+User hans@hahoweb.nl
+PassCmd "pass mw-hans@hahoweb.nl"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hans@hahoweb.nl-local
+Subfolders Verbatim
+Path /home/hans/.local/share/mail/hans@hahoweb.nl/
+Inbox /home/hans/.local/share/mail/hans@hahoweb.nl/INBOX
+Flatten .
+
+Channel hans@hahoweb.nl
+Expunge Both
+Master :hans@hahoweb.nl-remote:
+Slave :hans@hahoweb.nl-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore hans.w.hofman@gmail.com-remote
+Host imap.gmail.com
+Port 993
+User hans.w.hofman@gmail.com
+PassCmd "pass mw-hans.w.hofman@gmail.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hans.w.hofman@gmail.com-local
+Subfolders Verbatim
+Path /home/hans/.local/share/mail/hans.w.hofman@gmail.com/
+Inbox /home/hans/.local/share/mail/hans.w.hofman@gmail.com/INBOX
+Flatten .
+
+Channel hans.w.hofman@gmail.com
+Expunge Both
+Master :hans.w.hofman@gmail.com-remote:
+Slave :hans.w.hofman@gmail.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore hanska.hofman@outlook.com-remote
+Host imap-mail.outlook.com
+Port 993
+User hanska.hofman@outlook.com
+PassCmd "pass mw-hanska.hofman@outlook.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore hanska.hofman@outlook.com-local
+Subfolders Verbatim
+Path /home/hans/.local/share/mail/hanska.hofman@outlook.com/
+Inbox /home/hans/.local/share/mail/hanska.hofman@outlook.com/INBOX
+Flatten .
+
+Channel hanska.hofman@outlook.com
+Expunge Both
+Master :hanska.hofman@outlook.com-remote:
+Slave :hanska.hofman@outlook.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
+IMAPStore wjh.hofman@outlook.com-remote
+Host imap-mail.outlook.com
+Port 993
+User wjh.hofman@outlook.com
+PassCmd "pass mw-wjh.hofman@outlook.com"
+AuthMechs LOGIN
+SSLType IMAPS
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+
+MaildirStore wjh.hofman@outlook.com-local
+Subfolders Verbatim
+Path /home/hans/.local/share/mail/wjh.hofman@outlook.com/
+Inbox /home/hans/.local/share/mail/wjh.hofman@outlook.com/INBOX
+Flatten .
+
+Channel wjh.hofman@outlook.com
+Expunge Both
+Master :wjh.hofman@outlook.com-remote:
+Slave :wjh.hofman@outlook.com-local:
+Patterns * !"[Gmail]/All Mail"
+Create Both
+SyncState *
+MaxMessages 0
+ExpireUnread no
+# End profile
+
