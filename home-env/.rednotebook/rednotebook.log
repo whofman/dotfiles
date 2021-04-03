@@ -1,0 +1,31 @@
+2021-02-18 20:33:45,102 INFO     Writing log to file "/home/hans/.rednotebook/rednotebook.log"
+2021-02-18 20:33:45,102 INFO     System encoding: utf-8
+2021-02-18 20:33:45,102 INFO     Language code: en_US
+2021-02-18 20:33:45,243 INFO     Running in portable mode: False
+2021-02-18 20:33:45,243 INFO     First Start: True
+2021-02-18 20:33:45,243 INFO     RedNotebook version: 2.21
+2021-02-18 20:33:45,246 INFO     System info: machine: x86_64, platform: Linux-5.10.16-arch1-1-x86_64-with-glibc2.33, processor: , python_version: 3.9.1, release: 5.10.16-arch1-1, system: Linux, GTK: (3, 24, 25), Glib: (2, 66, 2), PyGObject: (3, 38, 0), YAML: 5.3.1
+2021-02-18 20:33:45,509 DEBUG    Default font: Noto Sans 11
+2021-02-18 20:33:45,510 DEBUG    Default size: 11.0
+2021-02-18 20:33:45,588 INFO     Cloud ignore list: ['filter', 'these', 'comma', 'separated', 'words', 'and', '#tags']
+2021-02-18 20:33:45,588 INFO     Cloud include list: ['mtv', 'spam', 'work', 'job', 'play']
+2021-02-18 20:33:45,588 DEBUG    Start compiling regexes
+2021-02-18 20:33:45,589 DEBUG    Finished
+2021-02-18 20:33:45,607 DEBUG    Tray icon visible: False
+2021-02-18 20:33:45,608 INFO     Opening journal at '/home/hans/.rednotebook/data'
+2021-02-18 20:33:45,608 DEBUG    Starting to load files in dir "/home/hans/.rednotebook/data"
+2021-02-18 20:33:45,609 DEBUG    Finished loading files in dir "/home/hans/.rednotebook/data"
+2021-02-18 20:33:45,641 INFO     Adding example content on 2021-02-18
+2021-02-18 20:33:45,642 INFO     Connected Signals: [<Signals.SIGHUP: 1>, <Signals.SIGINT: 2>, <Signals.SIGQUIT: 3>, <Signals.SIGABRT: 6>, <Signals.SIGTERM: 15>, <Signals.SIGTSTP: 20>]
+2021-02-18 20:33:45,642 DEBUG    Start took 0.399186372756958 seconds
+2021-02-18 20:33:45,642 DEBUG    Trying to enter the gtk main loop
+2021-02-18 20:33:45,709 DEBUG    Update the cloud
+2021-02-18 20:33:45,711 DEBUG    Background color: rgb(64,69,82)
+2021-02-18 20:33:45,711 DEBUG    Foreground color: rgb(211,218,227)
+2021-02-18 20:33:45,721 DEBUG    Cloud updated
+2021-02-18 20:33:45,724 INFO     Last backup was made 0 days ago
+2021-02-18 20:34:14,853 DEBUG    Add mathjax code: True
+2021-02-18 20:34:36,676 INFO     Nothing to save
+2021-02-18 20:34:36,676 INFO     Configuration has been saved to /home/hans/.rednotebook/configuration.cfg
+2021-02-18 20:34:36,676 INFO     Goodbye!
+2021-02-18 20:34:36,691 INFO     Peak memory: 134571368 KiB

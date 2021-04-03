@@ -1,0 +1,26 @@
+# abook addressbook file
+
+[format]
+program=abook
+version=0.6.1
+
+
+[0]
+name=hans
+email=hans@hahoweb,nk
+phome=0655348103
+
+[1]
+name=Gall & Gall
+email=mail@email.gall.nl
+
+[2]
+name=Bob Bobbington
+email=bob.bobbington@example.com
+workphone=01234 567890
+
+[3]
+name=Ed Eddington
+email=ed.eddington@example.com
+manager=Bob Bobbington
+workphone=01234 456789

@@ -1,6 +1,6 @@
 #!/bin/sh
 # Re-create "dotfiles" from cloned github dotfiles in ~/dotfiles
-git clone https://github.com/whofman/dotfiles.git
+#git clone https://github.com/whofman/dotfiles.git
 if [ -d ~/dotfiles ]; then
 	for f in ~/dotfiles/* 
 	do echo "stow -S $f" 
