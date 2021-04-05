@@ -1,9 +1,9 @@
 sw_volume: 92
 audio_device_state:1:pulse audio
 audio_device_state:1:toggle_visualizer
-state: play
-current: 79
-time: 120.206000
+state: pause
+current: 0
+time: 251.706000
 random: 1
 repeat: 0
 single: 0
@@ -14,93 +14,65 @@ mixrampdelay: -1.000000
 playlist_begin
 0:Duke Pearson/Sweet Honey Bee/02 Sudel.m4a
 1:Zoot Sims & Joe Pass/Plays the George Gershwin Song Book/01 It Ain't Necessarily So.mp3
-2:Julie London/All Through The Night/09 Every Time We Say Goodbye.m4a
-3:Nancy Wilson w_ Cannonball Adderley/Nancy Wilson & Cannonball Adderley/08 Teaneck.m4a
-4:Dinah Washington/First Issue_ The Dinah Washington Story, Disk 2/21 Mad About the Boy.m4a
-5:Sean O'Neill Band/Favourite Irish Drinking Songs/11 Dublin O'Shea _ Moonshiner _ Juice of the Barley _ Rosin' the Bow.m4a
-6:Kenny Burrell/Midnight Blue/03 Soul Lament.mp3
-7:Miles Davis/Kind Of Blue/06 Flamenco Sketches [_][Alternate Take].m4a
-8:Louis Armstrong/Gold 014/10 Jelly Roll Blues.m4a
-9:Chris Botti/To Love Again_ The Duets/02 What Are You Doing The Rest Of Your Life_ (Feat. Sting).m4a
-10:Miles Davis_Gil Evans/Porgy And Bess/07 Prayer (Oh Doctor Jesus).m4a
-11:Duke Ellington/The Duke Ellington Centennial Edition/20 Black And Tan Fantasy.m4a
-12:Jamie Cullum/Catching Tales/08 I'm Glad There Is You.m4a
-13:Bread & David Gates/Collected/1-10 Any Way You Want Me.m4a
-14:Herbert von Karajan/Karajan - Adagio (Herbert Von Karajan)/10 Air from Suite no 3 in D major  av Johann Sebastian Bach.mp3
-15:Nat King Cole/The World Of Nat King Cole/08 Unforgettable.m4a
-16:The Anita Kerr Singers/We Dig Mancini/04 Bye Bye Theme.mp3
-17:Liquid Mind/Relax - A Liquid Mind Experience/01 Teach Me to Whisper.m4a
-18:Bill Haley And His Comets/The Rolling Stone Magazines 50/Rock Around The Clock.m4a
-19:Astor Piazzolla/Lumiere/03 Lumiere.m4a
-20:Earl Klugh/Heart String/08 Heart String [Reprise].m4a
-21:Frank Sinatra/My Way The Best Of Frank Sinatra/09 For once in my life.m4a
-22:Ben Webster/Ben Webster For Lovers/07 Time After Time.m4a
-23:Astor Piazzolla/Lumiere/01 Solitude.m4a
-24:Oscar Peterson/tristeza on piano/Tristeza.mp3
-25:Sophie Milman/Take Love Easy/05 Be Cool.m4a
-26:Dionne Warwick/The Dionne Warwick Collection_ Her All-Time Greatest Hits/05 You'll Never Get to Heaven (If You Break My Heart).m4a
-27:The Anita Kerr Singers/We Dig Mancini/12 The Sweetheart Tree.mp3
-28:Clifford Brown/With Strings/04 Blue Moon.m4a
-29:Carmen McRae/The Great American Songbook/08 Sunday.m4a
-30:Ben Webster/Ben Webster For Lovers/01 Some Other Spring.m4a
-31:Wibi Soerjadi/Rachmaninov Piano Concertos 2 & 3/05 Concerto n.3_Intermezzo.mp3
-32:André Hazes/Hitoverzicht/17 Droomland.m4a
-33:Ben Webster_Oscar Peterson/Ben Webster Meets Oscar Peterson/01 The Touch Of Your Lips.m4a
-34:The Anita Kerr Singers/We Dig Mancini/08 The Pink Panther Theme.mp3
-35:Oscar Trio Peterson/Live in Belgrade/08 The Golden Striker.mp3
-36:Glenn Gould/Goldberg Variations Bwv 988 (Glenn Gould, Ed.1981)/25 Variatio 24 A 1 Clav. Canone All'ottava.mp3
-37:Antonio Carlos Jobim/Wave/09 Antigua.m4a
-38:Erroll Garner/Concert By The Sea/11 Erroll's Theme (Live).mp3
-39:Charlie Byrd/Guitar Artistry of Charlie Byrd/05 Everything I've Got (Belongs To You).m4a
-40:Marianne Faithfull/Easy Come Easy Go/08 In Germany Before the War.m4a
-41:Julie Is Her Name/11 No Moon At All.m4a
-42:Margriet Eshuijs/The Wee Small Hours/12 Magic Moments.m4a
-43:Neil Diamond/Neil Diamond 12 Greatest Hits/02 Hello Again.m4a
-44:Antonio Carlos Jobim/Wave/01 Wave.m4a
-45:Herb Alpert/Definitive Hits/15 Fandango.mp3
-46:Julie London/All Through The Night/08 My Heart Belongs To Daddy.m4a
-47:Piano Bar Music/Collection/Relaxing Sleep Music and Night Sounds.m4a
-48:Peggy Lee/The Best Of The Capitol Years/04 Don't Smoke In Bed.m4a
-49:Herbert von Karajan/Karajan - Adagio (Herbert Von Karajan)/09 Allegretto from Symphony 7 2nd mov  av Ludvig Van Beethoven.mp3
-50:Nat King Cole/The World Of Nat King Cole/05 (I Love You) For Sentimental R.m4a
-51:Lang Lang/Chopin Piano Concerto No 1/02 Piano Concerto No. 1, Op. 11 - Larghetto.m4a
-52:Tchaikovski/Music for the Millions/10 Ouverture 1812.mp3
-53:Dinah Washington/Sunnyside Of The Street/12 Take Your Shoes Off Baby.mp3
-54:John Abercrombie/November/02 J.S..mp3
-55:Larry Carlton/Deep Into It/09 Like Butta'.m4a
-56:Diana Krall/Love Scenes/14 Devil May Care.m4a
-57:Derek Trucks Band/Layla and Other Assorted Love Songs/05 I Am Yours.mp3
-58:Ella Fitzgerald/The Best of the Songbooks/09 Between the Devil and the Deep Blue Sea.m4a
-59:Roberta Gambarini/Easy to Love/03 Lover Man.m4a
-60:Stochelo Rosenberg, Romane/ELEGANCE/06 DREAMS.m4a
-61:The Anita Kerr Singers/We Dig Mancini/01 Baby Elephant Walk.mp3
-62:Glenn Gould/Goldberg Variations Bwv 988 (Glenn Gould, Ed.1981)/11 Variatio 10 A 1 Clav. Fughetta.m4a
-63:Chris Botti/When I Fall in Love/02 What'll I Do_.mp3
-64:Schubert/Very Best of Inspector Morse/02 String Quartet - Quartettesatz' D703.mp3
-65:The Anita Kerr Singers/Georgia On My Mind/05 hard times.mp3
-66:Emma Shapplin/Carmine Meo/08 Une Ombre Dans Le Ciel.m4a
-67:Art Farmer/Gentle Eyes/10 Gentle Eyes.m4a
-68:Dinah Washington/Mad About the Boy_ The Very Best of Dinah Washington/01 Mad About the Boy.m4a
-69:Gilbert Becaud/Olympia 03/14 La Solitude.m4a
-70:Dinah Washington/Complete 1943-1951 Mercury Master Takes Disc 4/07 I Apologize.m4a
-71:Kenny Dorham/At The Cafe Bohemia (Disc 02)/03 Monaco.m4a
-72:Paul Desmond/Easy Living/11 Bewitched Bothered and Bewildered (alt).m4a
-73:Michel Legrand/Anthologie CD 1/15 Amour, Amour.mp3
-74:Classic FM/15 Jaar Classic FM/11 Klarinet Concert - Adagio.m4a
-75:Diana Krall/Only Trust Your Heart/01 Is You Is or Is You Ain't My Baby_.m4a
-76:Eliane Elias/Sings Jobim/08 Song of the Jet.mp3
-77:Jamie Cullum/Pointless Nostalgic/04 You're nobody till somebody lo.m4a
-78:Neil Diamond/Neil Diamond Greatest Hits/06 All Around.m4a
-79:Sean O'Neill Band/Favourite Irish Drinking Songs/09 When I Was Single _ Love is Teasing _ Never Wed an Old Man.m4a
-80:Kenny Dorham/At The Cafe Bohemia (Disc 1)/08 Who Cares (Alternate).m4a
-81:Charlie Parker/Charlie Parker With Strings/03 April In Paris.m4a
-82:George Shearing & Nancy Wilson/The swingin's mutual/09 The nearness of you.m4a
-83:Dinah Washington/Sunnyside Of The Street/09 Let Me Love You.m4a
-84:Peggy Lee/The Best Of The Capitol Years/07 The Folks Who Live On The Hill.m4a
-85:Nat King Cole/The World Of Nat King Cole/20 Just One Of Those Things.m4a
-86:Boulevard Of Broken Dreams/It's The Talk Of The Town/12 Travelin' Light.m4a
-87:Gladys Knight/Midnight Train to Georgia/03 Tell Her.mp3
-88:Johnny Smith Quintet/Moonlight In Vermont/04 Jaguar.mp3
-89:Emma Shapplin/Carmine Meo/09 Lucifero, Quel Giorno....m4a
-90:Earl Klugh/The Best of Earl Klugh/04 Maybe Tonight.m4a
+2:Dinah Washington/First Issue_ The Dinah Washington Story, Disk 2/21 Mad About the Boy.m4a
+3:Kenny Burrell/Midnight Blue/03 Soul Lament.mp3
+4:Miles Davis/Kind Of Blue/06 Flamenco Sketches [_][Alternate Take].m4a
+5:Chris Botti/To Love Again_ The Duets/02 What Are You Doing The Rest Of Your Life_ (Feat. Sting).m4a
+6:Miles Davis_Gil Evans/Porgy And Bess/07 Prayer (Oh Doctor Jesus).m4a
+7:Duke Ellington/The Duke Ellington Centennial Edition/20 Black And Tan Fantasy.m4a
+8:Bread & David Gates/Collected/1-10 Any Way You Want Me.m4a
+9:Herbert von Karajan/Karajan - Adagio (Herbert Von Karajan)/10 Air from Suite no 3 in D major  av Johann Sebastian Bach.mp3
+10:Nat King Cole/The World Of Nat King Cole/08 Unforgettable.m4a
+11:The Anita Kerr Singers/We Dig Mancini/04 Bye Bye Theme.mp3
+12:Bill Haley And His Comets/The Rolling Stone Magazines 50/Rock Around The Clock.m4a
+13:Frank Sinatra/My Way The Best Of Frank Sinatra/09 For once in my life.m4a
+14:Ben Webster/Ben Webster For Lovers/07 Time After Time.m4a
+15:Oscar Peterson/tristeza on piano/Tristeza.mp3
+16:Dionne Warwick/The Dionne Warwick Collection_ Her All-Time Greatest Hits/05 You'll Never Get to Heaven (If You Break My Heart).m4a
+17:The Anita Kerr Singers/We Dig Mancini/12 The Sweetheart Tree.mp3
+18:Clifford Brown/With Strings/04 Blue Moon.m4a
+19:Carmen McRae/The Great American Songbook/08 Sunday.m4a
+20:Wibi Soerjadi/Rachmaninov Piano Concertos 2 & 3/05 Concerto n.3_Intermezzo.mp3
+21:Ben Webster_Oscar Peterson/Ben Webster Meets Oscar Peterson/01 The Touch Of Your Lips.m4a
+22:The Anita Kerr Singers/We Dig Mancini/08 The Pink Panther Theme.mp3
+23:Oscar Trio Peterson/Live in Belgrade/08 The Golden Striker.mp3
+24:Glenn Gould/Goldberg Variations Bwv 988 (Glenn Gould, Ed.1981)/25 Variatio 24 A 1 Clav. Canone All'ottava.mp3
+25:Antonio Carlos Jobim/Wave/09 Antigua.m4a
+26:Charlie Byrd/Guitar Artistry of Charlie Byrd/05 Everything I've Got (Belongs To You).m4a
+27:Marianne Faithfull/Easy Come Easy Go/08 In Germany Before the War.m4a
+28:Margriet Eshuijs/The Wee Small Hours/12 Magic Moments.m4a
+29:Neil Diamond/Neil Diamond 12 Greatest Hits/02 Hello Again.m4a
+30:Antonio Carlos Jobim/Wave/01 Wave.m4a
+31:Herb Alpert/Definitive Hits/15 Fandango.mp3
+32:Julie London/All Through The Night/08 My Heart Belongs To Daddy.m4a
+33:Piano Bar Music/Collection/Relaxing Sleep Music and Night Sounds.m4a
+34:Herbert von Karajan/Karajan - Adagio (Herbert Von Karajan)/09 Allegretto from Symphony 7 2nd mov  av Ludvig Van Beethoven.mp3
+35:Dinah Washington/Sunnyside Of The Street/12 Take Your Shoes Off Baby.mp3
+36:John Abercrombie/November/02 J.S..mp3
+37:Larry Carlton/Deep Into It/09 Like Butta'.m4a
+38:Diana Krall/Love Scenes/14 Devil May Care.m4a
+39:Derek Trucks Band/Layla and Other Assorted Love Songs/05 I Am Yours.mp3
+40:Ella Fitzgerald/The Best of the Songbooks/09 Between the Devil and the Deep Blue Sea.m4a
+41:Roberta Gambarini/Easy to Love/03 Lover Man.m4a
+42:Stochelo Rosenberg, Romane/ELEGANCE/06 DREAMS.m4a
+43:The Anita Kerr Singers/We Dig Mancini/01 Baby Elephant Walk.mp3
+44:Chris Botti/When I Fall in Love/02 What'll I Do_.mp3
+45:The Anita Kerr Singers/Georgia On My Mind/05 hard times.mp3
+46:Emma Shapplin/Carmine Meo/08 Une Ombre Dans Le Ciel.m4a
+47:Art Farmer/Gentle Eyes/10 Gentle Eyes.m4a
+48:Dinah Washington/Mad About the Boy_ The Very Best of Dinah Washington/01 Mad About the Boy.m4a
+49:Kenny Dorham/At The Cafe Bohemia (Disc 02)/03 Monaco.m4a
+50:Paul Desmond/Easy Living/11 Bewitched Bothered and Bewildered (alt).m4a
+51:Classic FM/15 Jaar Classic FM/11 Klarinet Concert - Adagio.m4a
+52:Eliane Elias/Sings Jobim/08 Song of the Jet.mp3
+53:Jamie Cullum/Pointless Nostalgic/04 You're nobody till somebody lo.m4a
+54:Kenny Dorham/At The Cafe Bohemia (Disc 1)/08 Who Cares (Alternate).m4a
+55:Charlie Parker/Charlie Parker With Strings/03 April In Paris.m4a
+56:George Shearing & Nancy Wilson/The swingin's mutual/09 The nearness of you.m4a
+57:Dinah Washington/Sunnyside Of The Street/09 Let Me Love You.m4a
+58:Peggy Lee/The Best Of The Capitol Years/07 The Folks Who Live On The Hill.m4a
+59:Nat King Cole/The World Of Nat King Cole/20 Just One Of Those Things.m4a
+60:Boulevard Of Broken Dreams/It's The Talk Of The Town/12 Travelin' Light.m4a
+61:Emma Shapplin/Carmine Meo/09 Lucifero, Quel Giorno....m4a
+62:Earl Klugh/The Best of Earl Klugh/04 Maybe Tonight.m4a
 playlist_end

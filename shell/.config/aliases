@@ -87,9 +87,9 @@ alias gcl='git clone'
 # }}}
 
 # Configuration files {{{
-alias bf="vim ~/.config/bmfiles" \
-alias bd="vim ~/.config/bmdirs" \
-#alias cfa='vim ~/.zshrc-personal'
+alias bf='vim ~/.config/bmfiles' 
+alias bd='vim ~/.config/bmdirs' 
+alias cfa='vim ~/.config/aliases' 
 alias cfb='vim ~/.config/bspwm/bspwmrc'
 alias cfd="vim ~/.local/src/ls/dwm/config.h"
 alias cfh='vim ~/srv/http/hb/updhb'
@@ -97,6 +97,7 @@ alias cfk='vim ~/.config/sxhkd/sxhkdrc'
 alias cfl='vim ~/.config/lf/lfrc'
 alias cfm='vim ~/.config/mutt/muttrc'
 alias cfp='vim ~/.config/polybar/config'
+alias cfq='vim ~/.config/qutebrowser/quickmarks'
 alias cfr='vim ~/.config/ranger/rc.conf'
 alias cfs='vim ~/.config/bspwm/sxhkd/sxhkdrc'
 alias cft='vim ~/.tmux.conf'

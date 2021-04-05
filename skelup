@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# skelup - manually add skel stuff to .config after being denied by 'skel'
+
+msg="$1 copied"
+if [ -d ~/.config/$1 ]; then
+	cp -r /etc/skel/.config/$1 ~/.config/$1
+else
+	msg="$1 doesnot exist"
+fi
+echo "$msg"
