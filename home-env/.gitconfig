@@ -7,37 +7,18 @@
   co = checkout
   st = status
   br = branch
-  finda = "!grepalias() { git config --global --get-regexp alias | grep -i \"$1\" | awk -v nr=2 '{sub(/^alias\\./,\"\")};{printf \"\\033[31m%_10s\\033[1;37m\", $1};{sep=FS};{for (x=nr; x<=NF; x++) {printf \"%s%s\", sep, $x; }; print \"\\033[0;39m\"}'; }; grepalias"
-  gui = !sh -c '/usr/local/opt/git/libexec/git-core/git-gui'
-	branches = !legit branches
-	graft = !legit graft
-	harvest = !legit harvest
-	publish = !legit publish
-	unpublish = !legit unpublish
-	sprout = !legit sprout
-	sync = !legit sync
-	switch = !legit switch
-	resync = !legit resync
 
 [core]
-	editor = sublime
-	excludesfile = /Users/hans/.gitignore
+	editor = vim
+	excludesfile = /home/hans/.gitignore
 
 [merge]
-	tool = sublime
+	tool = vim
 
 [filter "media"]
 	required = true
 	clean = git media clean %f
 	smudge = git media smudge %f
-
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path =
-
-[mergetool "sourcetree"]
-	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true
 
 [color]
 	ui = auto
@@ -56,11 +37,4 @@
 	smtpserver = smtp.gmail.com
 	smtpuser = hans.w.hofman@gmail.com
 	smtpserverport = 587
-[filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
 
-[mergetool "sublime"]
-	cmd = subl -w $MERGED
-	trustExitCode = false

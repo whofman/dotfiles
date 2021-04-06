@@ -16,6 +16,7 @@ alias psgr='ps axc | grep'
 alias A="cd ~/Archive && ls -a"
 alias D="cd ~/Documents && ls -a"
 alias d="cd ~/Downloads && ls -a"
+alias do="cd ~/dotfiles && ls"
 alias m="cd ~/Music && ls"
 alias pp="cd ~/Pictures && ls"
 alias vv="cd ~/Videos && ls"
@@ -87,9 +88,9 @@ alias gcl='git clone'
 # }}}
 
 # Configuration files {{{
-alias bf='vim ~/.config/bmfiles' 
-alias bd='vim ~/.config/bmdirs' 
-alias cfa='vim ~/.config/aliases' 
+alias bf='vim ~/.config/bmfiles'
+alias bd='vim ~/.config/bmdirs'
+alias cfa='vim ~/.config/aliases'
 alias cfb='vim ~/.config/bspwm/bspwmrc'
 alias cfd="vim ~/.local/src/ls/dwm/config.h"
 alias cfh='vim ~/srv/http/hb/updhb'
