@@ -38,3 +38,8 @@
 	smtpuser = hans.w.hofman@gmail.com
 	smtpserverport = 587
 
+[pull]
+	rebase = false
+
+[credential]
+	helper = cache --timeout=32000
