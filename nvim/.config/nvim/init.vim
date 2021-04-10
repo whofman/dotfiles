@@ -13,6 +13,8 @@ endif
 call plug#begin(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/plugged"'))
 Plug 'tpope/vim-surround'
 Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'jreybert/vimagit'
 Plug 'lukesmithxyz/vimling'
@@ -21,6 +23,7 @@ Plug 'bling/vim-airline'
 Plug 'tpope/vim-commentary'
 Plug 'ap/vim-css-color'
 Plug 'morhetz/gruvbox'
+Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] } " lazy load
 call plug#end()
 
 set title
@@ -34,6 +37,7 @@ set noruler
 set laststatus=0
 set noshowcmd
 set nobackup nowritebackup
+set notimeout
 
 " Some basics:
 	nnoremap c "_c
@@ -55,6 +59,18 @@ set nobackup nowritebackup
 " Quit input mode
 	inoremap <C-c> <esc>
 
+" Open FZF search
+	map <C-f> <Esc><Esc>:Files!<CR>
+	inoremap <C-f> <Esc><Esc>:BLines!<CR>
+	map <C-g> <Esc><Esc>:BCommits!<CR>
+
+" Use vim-which-key
+"	nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+"	let g:mapleader = "\<Space>"
+"	let g:maplocalleader = ','
+"	nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+"	nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
+
 " Goyo plugin makes text more readable when writing prose:
 	map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 
@@ -69,7 +85,7 @@ set nobackup nowritebackup
 	set background=dark cursorline termguicolors
 	nnoremap <C-l> :set background=light<CR>
 
-" Resize split screens
+" Resize split screens:
 	nnoremap <leader>- :vertical resize -5<CR>
 	nnoremap <leader>+ :vertical resize +5<CR>
 
