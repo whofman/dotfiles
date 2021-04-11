@@ -1,28 +1,27 @@
-2021/01/02-15:51:07.113 359ff Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
-2021/01/02-15:51:07.113 359ff Recovering log #71
-2021/01/02-15:51:07.125 359ff Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000071.log 
-2021/01/02-15:54:09.157 35e5e Level-0 table #75: started
-2021/01/02-15:54:09.180 35e5e Level-0 table #75: 2183131 bytes OK
-2021/01/02-15:54:09.184 35e5e Delete type=0 #71
-2021/01/02-16:00:09.942 35e5e Level-0 table #77: started
-2021/01/02-16:00:09.962 35e5e Level-0 table #77: 1870176 bytes OK
-2021/01/02-16:00:09.966 35e5e Delete type=0 #74
-2021/01/02-16:06:11.665 35a01 Level-0 table #79: started
-2021/01/02-16:06:11.693 35a01 Level-0 table #79: 1366628 bytes OK
-2021/01/02-16:06:11.697 35a01 Delete type=0 #76
-2021/01/02-16:06:11.698 359fc Compacting 4@0 + 4@1 files
-2021/01/02-16:06:11.735 359fc Generated table #80@0: 17 keys, 2717252 bytes
-2021/01/02-16:06:11.770 359fc Generated table #81@0: 19 keys, 1073291 bytes
-2021/01/02-16:06:11.770 359fc Compacted 4@0 + 4@1 files => 3790543 bytes
-2021/01/02-16:06:11.773 359fc compacted to: files[ 0 2 1 0 0 0 0 ]
-2021/01/02-16:06:11.773 359fc Delete type=2 #75
-2021/01/02-16:06:11.773 359fc Delete type=2 #68
-2021/01/02-16:06:11.773 359fc Delete type=2 #72
-2021/01/02-16:06:11.773 359fc Delete type=2 #77
-2021/01/02-16:06:11.774 359fc Delete type=2 #67
-2021/01/02-16:06:11.774 359fc Delete type=2 #70
-2021/01/02-16:06:11.774 359fc Delete type=2 #69
-2021/01/02-16:06:11.774 359fc Delete type=2 #79
-2021/01/02-16:21:12.589 35e5e Level-0 table #83: started
-2021/01/02-16:21:12.612 35e5e Level-0 table #83: 2023465 bytes OK
-2021/01/02-16:21:12.616 35e5e Delete type=0 #78
+2021/03/16-10:40:04.090 d2909 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/MANIFEST-000001
+2021/03/16-10:40:04.090 d2909 Recovering log #82
+2021/03/16-10:40:04.099 d2909 Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cjpalhdlnbpafiamejdnhcphjbkeiagm/000082.log 
+2021/03/16-10:40:07.778 d28d5 Level-0 table #86: started
+2021/03/16-10:40:07.820 d28d5 Level-0 table #86: 2913756 bytes OK
+2021/03/16-10:40:07.824 d28d5 Delete type=0 #82
+2021/03/16-10:43:08.873 d28eb Level-0 table #88: started
+2021/03/16-10:43:08.895 d28eb Level-0 table #88: 1752684 bytes OK
+2021/03/16-10:43:08.899 d28eb Delete type=0 #85
+2021/03/16-10:43:09.101 d28eb Level-0 table #90: started
+2021/03/16-10:43:09.128 d28eb Level-0 table #90: 2960668 bytes OK
+2021/03/16-10:43:09.132 d28eb Delete type=0 #87
+2021/03/16-10:43:09.133 d28eb Compacting 4@0 + 2@1 files
+2021/03/16-10:43:09.169 d28eb Generated table #91@0: 18 keys, 2697923 bytes
+2021/03/16-10:43:09.200 d28eb Generated table #92@0: 9 keys, 3059296 bytes
+2021/03/16-10:43:09.218 d28eb Generated table #93@0: 13 keys, 1632875 bytes
+2021/03/16-10:43:09.218 d28eb Compacted 4@0 + 2@1 files => 7390094 bytes
+2021/03/16-10:43:09.222 d28eb compacted to: files[ 0 3 1 0 0 0 0 ]
+2021/03/16-10:43:09.223 d28eb Delete type=2 #90
+2021/03/16-10:43:09.223 d28eb Delete type=2 #83
+2021/03/16-10:43:09.223 d28eb Delete type=2 #86
+2021/03/16-10:43:09.223 d28eb Delete type=2 #80
+2021/03/16-10:43:09.223 d28eb Delete type=2 #88
+2021/03/16-10:43:09.223 d28eb Delete type=2 #81
+2021/03/16-10:47:11.019 d3b97 Level-0 table #95: started
+2021/03/16-10:47:11.073 d3b97 Level-0 table #95: 1725914 bytes OK
+2021/03/16-10:47:11.079 d3b97 Delete type=0 #89

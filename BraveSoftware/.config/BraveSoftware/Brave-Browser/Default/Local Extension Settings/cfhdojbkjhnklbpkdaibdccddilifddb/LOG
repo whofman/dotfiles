@@ -1,8 +1,19 @@
-2021/03/16-10:40:04.129 d2909 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cfhdojbkjhnklbpkdaibdccddilifddb/MANIFEST-000001
-2021/03/16-10:40:04.129 d2909 Recovering log #624
-2021/03/16-10:40:04.197 d2909 Level-0 table #629: started
-2021/03/16-10:40:04.408 d2909 Level-0 table #629: 5930655 bytes OK
-2021/03/16-10:40:04.420 d2909 Delete type=0 #624
-2021/03/16-10:41:16.380 d2909 Level-0 table #632: started
-2021/03/16-10:41:16.439 d2909 Level-0 table #632: 5930537 bytes OK
-2021/03/16-10:41:16.443 d2909 Delete type=0 #630
+2021/04/10-18:01:20.004 11f934 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/cfhdojbkjhnklbpkdaibdccddilifddb/MANIFEST-000001
+2021/04/10-18:01:20.004 11f934 Recovering log #631
+2021/04/10-18:01:20.069 11f934 Level-0 table #634: started
+2021/04/10-18:01:20.134 11f934 Level-0 table #634: 5804984 bytes OK
+2021/04/10-18:01:20.156 11f934 Delete type=0 #631
+2021/04/10-18:02:23.186 11f934 Level-0 table #637: started
+2021/04/10-18:02:23.244 11f934 Level-0 table #637: 5804593 bytes OK
+2021/04/10-18:02:23.248 11f934 Delete type=0 #635
+2021/04/10-18:02:23.250 11f934 Compacting 4@0 + 2@1 files
+2021/04/10-18:02:23.355 11f934 Generated table #638@0: 1 keys, 5804511 bytes
+2021/04/10-18:02:23.359 11f934 Generated table #639@0: 4 keys, 542 bytes
+2021/04/10-18:02:23.359 11f934 Compacted 4@0 + 2@1 files => 5805053 bytes
+2021/04/10-18:02:23.363 11f934 compacted to: files[ 0 2 1 0 0 0 0 ]
+2021/04/10-18:02:23.363 11f934 Delete type=2 #632
+2021/04/10-18:02:23.363 11f934 Delete type=2 #627
+2021/04/10-18:02:23.363 11f934 Delete type=2 #637
+2021/04/10-18:02:23.363 11f934 Delete type=2 #626
+2021/04/10-18:02:23.363 11f934 Delete type=2 #629
+2021/04/10-18:02:23.363 11f934 Delete type=2 #634

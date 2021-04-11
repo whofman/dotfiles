@@ -1,9 +1,3 @@
-2021/01/02-15:51:07.965 35a01 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/mlomiejdfkolichcflejclcbmpeaniij/MANIFEST-000001
-2021/01/02-15:51:07.966 35a01 Recovering log #16
-2021/01/02-15:51:07.966 35a01 Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/mlomiejdfkolichcflejclcbmpeaniij/000016.log 
-2021/01/02-16:03:18.573 35a01 Compacting 1@1 + 1@2 files
-2021/01/02-16:03:18.583 35a01 Generated table #19@1: 85 keys, 287789 bytes
-2021/01/02-16:03:18.583 35a01 Compacted 1@1 + 1@2 files => 287789 bytes
-2021/01/02-16:03:18.586 35a01 compacted to: files[ 0 0 1 0 0 0 0 ]
-2021/01/02-16:03:18.587 35a01 Delete type=2 #14
-2021/01/02-16:03:18.587 35a01 Delete type=2 #17
+2021/03/16-10:40:05.027 d2909 Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/mlomiejdfkolichcflejclcbmpeaniij/MANIFEST-000001
+2021/03/16-10:40:05.027 d2909 Recovering log #16
+2021/03/16-10:40:05.028 d2909 Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/Local Extension Settings/mlomiejdfkolichcflejclcbmpeaniij/000016.log 
