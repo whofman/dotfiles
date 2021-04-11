@@ -1,5 +1,0 @@
-2021/04/10-18:01:20.648 11f9cd Reusing MANIFEST /home/hans/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/MANIFEST-000001
-2021/04/10-18:01:20.648 11f9cd Recovering log #106
-2021/04/10-18:01:20.651 11f9cd Reusing old log /home/hans/.config/BraveSoftware/Brave-Browser/Default/IndexedDB/chrome-extension_mlomiejdfkolichcflejclcbmpeaniij_0.indexeddb.leveldb/000106.log 
-2021/04/10-18:01:20.652 11f9cd Delete type=2 #105
-2021/04/10-18:01:20.694 11f9ae Manual compaction at level-0 from '\x00.\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00/\x00\x00\x00' @ 0 : 0; will stop at (end)
